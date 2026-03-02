@@ -30,17 +30,9 @@ class TelegramUser(Base):
 
 
 
-engine = create_engine("postgresql://postgres:1@localhost:5432/sqlalchemy_db", echo=True)
+engine = create_engine("Bu yerga:(postgresql://user:parol@host:port/database_name) yoziladi")
 
 Base.metadata.create_all(engine)
-
-
-
-
-#
-
-
-
 
 
 class Category(Base):

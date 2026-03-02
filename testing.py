@@ -1,3 +1,5 @@
+"""bu yerdagi cod suratni encode va ecod qiladi"""
+
 # from base64 import b64decode, b64encode
 #
 #
@@ -11,5 +13,4 @@
 #     image_code = image_code.encode()
 #     image_code = b64decode(image_code)
 #     f1.write(image_code)
-#
-#
+

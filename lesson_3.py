@@ -85,11 +85,11 @@ class District(Base):
     users: Mapped[list['User']] = relationship('User', back_populates='district')
 
 
-pg_url="postgresql://postgres:1@localhost:5432/sqlalchemy_db"
+pg_url="Bu yerga:(postgresql://postgres:parol@host:port/database_name) yoziladi"
+
 engine = create_engine(pg_url)
 
 Base.metadata.create_all(engine)
-
 
 
 with open('regions.csv', 'r') as f1, Session(engine) as session:

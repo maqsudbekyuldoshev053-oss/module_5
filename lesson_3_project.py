@@ -90,11 +90,9 @@ class Region(Base):
     user: Mapped[list['User']] = relationship('User', back_populates='region')
 
 
-
-engine = create_engine("postgresql://postgres:1@localhost:5432/sqlalchemy_db")
+engine = create_engine("Bu yerga:(postgresql://postgres:parol@host:port/database_name) yoziladi")
 
 Base.metadata.create_all(engine)
-#
 with open('regions.csv', 'r') as f1, Session(engine) as session:
     regions = csv.DictReader(f1)
     query = insert(Region).values(list(regions))

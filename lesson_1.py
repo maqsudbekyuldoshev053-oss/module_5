@@ -12,7 +12,7 @@ print(d)
 
 import psycopg2
 
-conn = psycopg2.connect("dbname='dvdrental' user='postgres' host='localhost' password='1'")
+conn = psycopg2.connect("dbname='' user='' host='' password=''")
 
 cur = conn.cursor()
 query = "select * from actor limit 5"
